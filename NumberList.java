@@ -32,13 +32,13 @@ public class NumberList {
     }
 
     public void removeEveryThirdElement(){
-        
+        ArrayList<Integer> filteredList = new ArrayList<Integer>();
         for(int i=0;i<this.list.size();i++){
-            if((i+1)%3 ==0){
-                
-                System.out.println("Element removed : "+ this.list.get(i));
+            if((i+1)%3 !=0){
+                filteredList.add(this.list.get(i));
             }
         }
+        this.list = filteredList;
 
     }
 }

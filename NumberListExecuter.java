@@ -4,7 +4,8 @@ public class NumberListExecuter {
         NumberList listObject = new NumberList();
         listObject.addToList();
         listObject.displayList();
-        listObject.removeEveryThirdElement();
+        
+        listObject.removeEveryThirdElementWithRemove();
         listObject.displayList();
         
     }

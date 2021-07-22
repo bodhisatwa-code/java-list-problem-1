@@ -42,4 +42,18 @@ public class NumberList {
         this.list = filteredList;
 
     }
+
+    public void removeEveryThirdElementWithRemove(){
+        for(int i=0;i<this.list.size();i++){
+            if((i+1)%3 ==0){
+                this.list.set(i,0);
+            }
+        }
+        for(int i=0;i<this.list.size();i++){
+            if(this.list.get(i)==0){
+                this.list.remove(i);
+            }
+        }
+        
+    }
 }

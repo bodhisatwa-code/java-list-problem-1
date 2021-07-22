@@ -16,7 +16,7 @@ public class NumberList {
         for(int i=0; i < len ; i++){
             System.out.print("Enter element : "+(i+1)+" : ");
             this.list.add(scanner.nextInt());
-            System.out.println("");
+            System.out.println("    -------    ");
         }
         System.out.println("List filled up nicely");
         System.out.println("------------------------------------");
@@ -32,6 +32,7 @@ public class NumberList {
     }
 
     public void removeEveryThirdElement(){
+        System.out.println("Removing every 3rd element .... ");
         ArrayList<Integer> filteredList = new ArrayList<Integer>();
         for(int i=0;i<this.list.size();i++){
             if((i+1)%3 !=0){
